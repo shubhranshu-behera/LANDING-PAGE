@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box ;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url(cloth.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: rgba(15, 145, 168, 0.658);
+            color: rgb(2, 17, 8);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            background: brown;
+            border-radius: 25% 10%;
+            font-family: cursive;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 5px 20px;
+            font-size: medium;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+        }
+
+
+        .register a{
+            text-decoration: none;
+            color: aqua;
+            padding: 5px 20px;
+            font-size: 20px;
+            background: indianred;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h_txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50% ;        
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        .h_txt span{
+            letter-spacing: 2px;
+            color: red;
+        }
+        .h_txt h1{
+            font-size: 3.5em;
+        }
+        .h_txt a{
+            text-decoration: none;
+            background-color: indianred;
+            color: white;
+            padding: 10px 20px;
+            transition: 0.4s;
+        }
+        .h_txt a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                YOUR'S LAUNDRY
+            </div>
+
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">PRICING</a>
+                <a href="#">PAGES</a>
+                <a href="#">CONTACT</a>
+            </div>
+            
+            <div class="register">
+                <a href="#">REGISTER</a>
+            </div>
+        </nav>
+        <section class="h_txt">
+            <span> <h3>Enjoy</h3></span>
+            <h1>QUALITY LAUNDRY SERVICE IN YOUR CITY</h1>
+            <span> <h3>We take care about cleanness of your cloth </h3></span>
+            <br>
+            <a href="#">Book your Service</a>
+
+        </section>
+    </header>
+    
+</body>
+</html>
